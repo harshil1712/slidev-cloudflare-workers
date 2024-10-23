@@ -1,19 +1,25 @@
 {
-  "name": "slidev-worker-assets",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
-    "test": "vitest",
-    "cf-typegen": "wrangler types"
-  },
-  "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.5.2",
-    "@cloudflare/workers-types": "^4.20241022.0",
-    "typescript": "^5.5.2",
-    "vitest": "2.0.5",
-    "wrangler": "^3.60.3"
-  }
+	"name": "slidev-worker-assets",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"build": "slidev build",
+		"dev": "slidev --open",
+		"export": "slidev export",
+		"preview": "npm run build && wrangler dev",
+		"deploy": "npm run build && wrangler deploy",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.5.2",
+		"@cloudflare/workers-types": "^4.20241022.0",
+		"typescript": "^5.5.2",
+		"vitest": "2.0.5",
+		"wrangler": "^3.60.3"
+	},
+	"dependencies": {
+		"@slidev/cli": "^0.50.0-beta.4",
+		"@slidev/theme-default": "^0.25.0",
+		"@slidev/theme-seriph": "^0.25.0"
+	}
 }
