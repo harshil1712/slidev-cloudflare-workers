@@ -19,14 +19,17 @@ transition: slide-left
 mdc: true
 # take snapshot for each slide in the overview
 overviewSnapshots: true
-# addons:
-#   - slidev-addon-live-reactions
+addons:
+    - '@harshil1712/slidev-addon-protected-presenter'
+#   - '@harshil1712/slidev-addon-protected-presenter'
 # liveReactions:
 #   server: ws://localhost:8787/ws
 #   okay: 👀
 #   good: 👍
 #   great: ❤️
 #   mindBlown: 🤯
+auth:
+  passwordUrl: /auth
 
 routerMode: hash
 
