@@ -20,16 +20,16 @@ mdc: true
 # take snapshot for each slide in the overview
 overviewSnapshots: true
 addons:
-    - '@harshil1712/slidev-addon-protected-presenter'
-#   - '@harshil1712/slidev-addon-protected-presenter'
+    # - '@harshil1712/slidev-addon-protected-presenter'
+#   - '@harshil1712/slidev-addon-live-reactions'
 # liveReactions:
 #   server: ws://localhost:8787/ws
 #   okay: 👀
 #   good: 👍
 #   great: ❤️
 #   mindBlown: 🤯
-auth:
-  passwordUrl: /auth
+# auth:
+  # passwordUrl: /auth
 
 routerMode: hash
 
